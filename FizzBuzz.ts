@@ -1,14 +1,17 @@
-export default function FizzBuzz(n: number): Array<number | string> {
-  const result: Array<number | string> = [];
+export default function FizzBuzz(n: number): string {
+  let result = '';
   for (let i = 1; i <= n; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
-      result.push('FizzBuzz');
+      result += 'FizzBuzz';
     } else if (i % 3 === 0) {
-      result.push('Fizz');
+      result += 'Fizz';
     } else if (i % 5 === 0) {
-      result.push('Buzz');
+      result += 'Buzz';
     } else {
-      result.push(i);
+      result += i;
+    }
+    if (i !== n) {
+      result += '|';
     }
   }
   return result;
