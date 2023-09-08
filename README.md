@@ -238,3 +238,9 @@ if (!nonSymbolPattern.test(req.body.password)) {
 Copilot was not able to discipher the current implementation. After some prompting, it gave a generic implementation for the password length check.
 
 It did give a refactored version of the response. However, it did not understand the test scenario.
+
+## Test 5
+
+Using ChatGPT 3.5, implement the Sum and FizzBuzz method with just the test.
+
+Chat conversation: <https://chat.openai.com/share/bb43e0d6-3e15-433a-9a3c-21077935016f>
